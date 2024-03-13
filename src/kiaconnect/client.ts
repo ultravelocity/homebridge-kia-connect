@@ -116,7 +116,7 @@ export class KiaConnect {
         defrost: false,
         ventilationWarning: false,
         ignitionOnDuration: {
-          value: 5,
+          value: 10,
           unit: 4,
         },
         heatingAccessory: {
