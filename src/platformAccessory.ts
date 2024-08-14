@@ -170,7 +170,9 @@ export class Car {
     if (!this.current) {
       return 0;
     }
-
+    if (!this.current.exteriorTemperature) {
+      return 0;
+    }
     this.platform.log.info('getCurrentTemperature:', this.current.exteriorTemperature);
     return this.current.exteriorTemperature;
   }
